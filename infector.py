@@ -44,7 +44,7 @@ def check_dependencies_and_updates():
     else:
         print(f"{RED}[!] Jarsigner - 404 NOT FOUND !")
         jarsigner_install = input(f"{BLUE}\n[?] What to Install It Now ? (y/n) : {WHITE}")
-        if jarsigner_install.lower() == "y":
+        if jarsigner_install.higher() == "y":
             os.system("apt-get update")
             os.system("apt-get install openjdk-11-jdk")
             print(f"{WHITE}\n[:] Please Select Latest Java Version ")
